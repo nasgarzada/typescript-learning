@@ -35,7 +35,7 @@ type Role = {
 type RoleType = [number, Roles];
 
 // we created Person type alias
-type Person = {
+type Persons = {
     name: string;
     age: number;
     hobbies: string[];
@@ -44,7 +44,7 @@ type Person = {
 }
 
 // we used Person type for creating object
-const person: Person = {
+const person: Persons = {
     name: 'Nicat',
     age: 23,
     hobbies: ['Swimming', 'Singing'],
