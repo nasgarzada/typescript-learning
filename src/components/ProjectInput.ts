@@ -1,12 +1,12 @@
-import { Component } from './Component.js';
+import Component from './Component.js';
 import { CssIds } from '../models/enums/CssIds.js';
-import { Autobind } from '../decorators/Autobind.js';
-import { ProjectState } from './ProjectState.js';
-import { validate } from '../util/ValidationHelper.js';
+import Autobind from '../decorators/Autobind.js';
+import ProjectState from './ProjectState.js';
+import validate from '../util/ValidationHelper.js';
 
 // ProjectInput
 
-export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
+export default class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
 
     titleInputElement: HTMLInputElement;
     descriptionInputElement: HTMLInputElement;

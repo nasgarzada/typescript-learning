@@ -1,5 +1,5 @@
 // validation
-export interface Validatable {
+export default interface Validatable {
     value: string | number;
     required?: boolean;
     minLength?: number;

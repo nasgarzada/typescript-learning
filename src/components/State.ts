@@ -1,7 +1,7 @@
 import { Listener } from '../models/Listener.js';
 // State base class
 
-export abstract class State<T extends {}> {
+export default abstract class State<T extends {}> {
     protected listeners: Listener<T>[];
 
     constructor() {

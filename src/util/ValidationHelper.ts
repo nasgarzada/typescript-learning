@@ -1,6 +1,6 @@
-import { Validatable } from 'Validatable.js';
+import Validatable from 'Validatable.js';
 
-export function validate(validatable: Validatable): boolean {
+export default function validate(validatable: Validatable): boolean {
     let isValid = true;
     if (validatable.required) {
         isValid = isValid &&

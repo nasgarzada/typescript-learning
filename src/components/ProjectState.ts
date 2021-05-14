@@ -1,10 +1,10 @@
-import { State } from './State.js';
+import State from './State.js';
 import { Project } from '../models/Project.js';
 import { ProjectStatus } from '../models/enums/ProjectStatus.js';
 
 // Project State class
 
-export class ProjectState extends State<Project>{
+export default class ProjectState extends State<Project>{
     private projects: Project[] = [];
     private static INSTANCE: ProjectState;
 

@@ -1,5 +1,5 @@
 //autobind decorator
-export function Autobind(
+export default function Autobind(
     _: any,
     _2: string,
     descriptor: PropertyDescriptor

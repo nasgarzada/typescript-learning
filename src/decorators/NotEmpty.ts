@@ -1,5 +1,5 @@
 // NotEmpty decorator function like hibernate validator
-export function NotEmpty() {
+export default function NotEmpty() {
     return function (target: any, propKey: string) {
         let value: string;
         const getter = () => value;
