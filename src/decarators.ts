@@ -44,7 +44,7 @@ class Course {
     }
 }
 
-function validate(obj: any): boolean {
+function validated(obj: any): boolean {
     let isValid = false;
     const validationProps = registeredValidators[obj.constructor.name];
     if (!validationProps) {
@@ -73,6 +73,6 @@ courseForm.addEventListener('submit', event => {
     const price = +priceEl.value;
 
     const createdCourse = new Course(title, price);
-    validate(createdCourse);
+    validated(createdCourse);
     console.log(createdCourse);
 });
